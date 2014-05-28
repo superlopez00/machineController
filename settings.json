@@ -1,0 +1,12 @@
+{
+	"inputs":[
+		{"id":"homeX","value":35},
+		{"id":"homeY","value":36},
+		{"id":"homeZ","value":37}
+	],
+	"outputs":[
+		{"id":"fresa", "value":35},
+		{"id":"aspiracion", "value":36},
+		{"id":"vacio", "value":37}
+	]
+}

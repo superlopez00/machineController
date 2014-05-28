@@ -1,0 +1,14 @@
+TexOptions  { host: '192.168.0.201',
+  initOptions: 
+   { _: [],
+     texHost: '192.168.0.201',
+     webPort: 8005,
+     name: 'PODO',
+     '$0': 'node C:\\TexController\\TexController_prj\\app.js' } }
+opening interface
+Connecting to tex...
+CONNECTED TO: 192.168.0.201:6000
+tex ready
+connecting to ftp with host: 192.168.0.201
+ftpReady 
+^C

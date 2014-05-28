@@ -1,0 +1,16 @@
+{
+	"inputs":[
+		{"id":"homeX","index":40},
+		{"id":"homeY","index":42},
+		{"id":"homeZ","index":44},
+		{"id":"palpador","index":59},
+		{"id":"start","index":18},
+		{"id":"stop","index":19}
+		
+	],
+	"outputs":[
+		{"id":"fresa", "index":99},
+		{"id":"aspiracion", "index":36},
+		{"id":"vacio", "index":36}
+	]
+}

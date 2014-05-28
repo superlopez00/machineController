@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>MILLING SPOOLER</title>
+
+    <meta charset="utf-8">
+<link rel="stylesheet" href="css/mach.css" type="text/css">
+
+<script type='text/javascript' src="./utils.js"></script>
+<script type='text/javascript' src="jquery-1.8.3.min.js"></script>
+<script type='text/javascript' src="js/machine.js"></script>
+</head>
+
+<script type='text/javascript'>
+function initApp(){
+	cncMachineController.init();
+	cncMachineView.init();
+}
+</script>
+
+<body onload="initApp()">
+  <div id="head">
+    <div id="logo"></div>
+       <ul class="menu">
+		<li id="idMenuHome">
+            <a href="#" onClick="performClick();" style="font-size:20px">Choose file to Send</a></li>
+          <div class="clear"></div>
+          </ul> 
+    </div>
+<div class="page">
+<div class="vcformach">
+<div class="vccolscontainer">
+
+<script type="text/javascript">
+
+function performClick() {
+
+    readTextFile = function() {
+        var p = $.Deferred();
+        var file = document.createElement("input");
+        if(!file) {
+            p.reject();
+            return p.promise();
+        }
+        file.setAttribute("type","file");
+
+        file.addEventListener('change',
+                function() {
+                    var file0 = file.files[0];
+                    var reader = new FileReader();
+                    reader.onerror = function(e) {
+                        p.reject();
+                    };
+                    reader.onload = function(e) {
+                        var dataOrg = e.target.result;
+                        p.resolve(dataOrg);
+                    };
+                    reader.readAsText(file0);
+                }
+                , false);
+
+        if(file.click)
+            file.click();
+        else {
+            var evt = document.createEvent("HTMLEvents");
+            evt.initEvent("click", true, true);
+            file.dispatchEvent(evt);
+        }
+        return p.promise();
+    }
+
+
+    readTextFile().then( function(data)
+    {
+        cncMachineController.loadGCode(data);
+    });
+}
+</script>
+
+<div id="menu">
+    <div class="colscad-12 center">
+        <p style="font-size: 18px;" id="machineName">TEX MACHINE</p>
+        <a href="control.html" target="_self|_top"> <input type="button" class="center btn btn-teal" style="width:45%" name="bindex" value="CONTROL"/></a>
+        <a href="request?cmd=GETGLOBALS" target="_blank"> <input type="button" class="center btn btn-teal" style="width:45%" name="bglobals" value="GLOBALS"/></a>
+    </div>
+</div>
+
+<div class="colscad-1 relleno">
+
+    <h3 class="center">CNC Last Error</h3>
+    <div class="center">
+        <input type="text" class="inputform wfull error" readonly id="cncLastError" >
+    </div>
+    <div class="clear"></div>
+    <p><p>
+
+
+    <div id="cncFlags">
+        <div class="colscad-4">
+            <h3 class="center">EMERGENCY</h3>
+        </div>
+        <div class="colscad-4">
+            <h3 class="center">In ERROR</h3>
+        </div>
+        <div class="colscad-4">
+            <h3 class="center">RUNNING</h3>
+        </div>
+        <div class="colscad-4">
+            <h3 class="center">MANUAL</h3>
+        </div>
+
+        <div class="colscad-4 center">
+            <img class="center" src="images/gray.png" id="cncEmergency" width="32" height="32" alt="cncEmergency">
+        </div>
+        <div class="colscad-4 center">
+            <img class="center" src="images/gray.png" id="cncInError" width="32" height="32" alt="cncInError">
+        </div>
+        <div class="colscad-4 center">
+            <img class="center" src="images/gray.png" id="cncRunning" width="32" height="32" alt="cncRunning">
+        </div>
+        <div class="colscad-4 center">
+            <img class="center" src="images/gray.png" id="cncManualMode" width="32" height="32" alt="cncManualMode">
+        </div>
+    </div>
+
+</div>
+
+<div class="colscad-1 center">
+
+        <div class="colscad-2 center">
+                <h3 class="center">Tex Conexion Status</h3>
+        </div>
+        <div class="colscad-2 center">
+                <h3 class="center">Server Status</h3>
+        </div>
+
+        <div class="colscad-2">
+            <input type="text" class="inputform wfull center info" readonly id="texStatus">
+        </div>
+        <div class="colscad-2">
+            <input type="text" class="inputform wfull center info" readonly id="serverInternalStatus">
+        </div>
+        <!-- area del ftp -->
+        <div id="ftp area" class="colscad-1 relleno">
+            <!-- connect y mensaje -->
+            <div class="colscad-2">
+                <h3 class="center">Ftp Connect Status</h3>
+            </div>
+            <div class="colscad-2">
+                <h3 class="center">Tex Job Status</h3>
+            </div>
+
+            <div class="colscad-2 center">
+                <img class="center" src="images/gray.png" id="ftpConnectStatus" width="32" height="32" alt="ftpConnectStatus">
+            </div>
+            <div class="colscad-2 center">
+                <input type="text" class="inputform wfull center" style="font-weight:bold;color: #32fff9;" id="jobStatus">
+            </div>
+
+            <div class="clear"></div>
+            <p></p>
+            <h3 class="center">Ftp Transmission File</h3>
+            <p></p>
+            <meter min="0" max="100" style="height: 20px;" class="bar blue wfull"  id="ftpCurProgress"></meter>
+            <input type="text" class="inputform wfull center" id="ftpResultMsg">
+
+        </div>
+        <div class="clear"></div>
+        <p>
+        <!-- el curJob -->
+        <div id="cur job" class="colscad-2 relleno">
+            <div class="colscad-1">
+                <h3 class="left">Current Job</h3>
+                <br>
+                <div id="curJob" style="height: 100px;"></div>
+
+            </div>
+        </div>
+
+        <div id="job queue" class="colscad-2 relleno">
+            <div class="colscad-1">
+                <h3 class="left">Job Queue</h3>
+                <br>
+                <div id="jobQueue" style="height: 100px; overflow-y: scroll;">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="colscad-1 center">
+            <div class="btn btn-blue wfull" onClick="cncMachineController.clearJobs()">Clear JOBS QUEUE</div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>

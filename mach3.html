@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="css/mach.css" type="text/css">
+
+<script type='text/javascript' src="jquery-1.8.3.min.js"></script>
+<script type='text/javascript' src="js/machine.js"></script>
+</head>
+
+<script type='text/javascript'>
+function initApp(){
+	cncMachineController.init();
+	cncMachineView.init();
+}
+</script>
+
+<body onload="initApp()">
+  <div id="head">
+    <div id="logo"></div>
+       <ul class="menu">
+		<li id="idMenuHome">
+<!--         <a href="#" onClick="performClick(document.getElementById('theFile'));">File</a></li> -->
+<!--           <li id="idProduct" >Config
+           <ul>
+           <li><a href="#"></a></li>
+          </ul>
+           </li>
+           <li>
+           <a href="#">Function Cfg's</a></li>
+	       <li>View<a href="#"></a></li>
+           <li><a href="#">Wizards</a></li>
+           <li><a href="#">Plugin Control</a></li> -->
+          <div class="clear"></div>
+          </ul> 
+    </div>
+<div class="page">
+<div class="vcformach">
+<div class="vccolscontainer">
+
+<script type="text/javascript">
+
+function performClick() {
+   var evt = document.createEvent("MouseEvents");
+   evt.initEvent("click", true, false);
+}
+</script>
+
+<div class="center">
+<input type="text" class="inputform wfull error" readonly id="cncLastError" ></input>
+</div>
+
+<div class="colscad-2 relleno">
+
+    <div id="ejes">
+        <div class="colscad-4">
+        <h3 class="center">EJE</h3><hr>
+        </div>
+        <div class="colscad-4">
+        <h3 class="center">Posición</h3><hr>
+        </div>
+        <div class="colscad-4">
+        <h3 class="center">Velocidad</h3><hr>
+        </div>
+        <div class="colscad-4">
+        <h3 class="center">Action</h3><hr>
+        </div>        
+        <div class="clear"></div>
+
+        <div id="axisInfo">
+
+            <!--<div class="colscad-4 center">
+            <h2><label id="name0">J</label></h2>
+            </div>
+            <div class="colscad-4">
+            <input type="text" class="inputform w80" id="pos0"></input>
+            </div>
+            <div class="colscad-4">
+            <input type="text" class="inputform w80" id="velo0"></input>
+            </div>
+            <div class="colscad-4">
+            <div class="btn btn-teal wfull" onClick="cncMachineController.homeAxis(0)">Zero</div>
+            </div>
+            <div class="clear"></div>
+            <div class="colscad-4 center">
+            <h2><label id="name1">Y</label></h2>
+            </div>
+            <div class="colscad-4">
+            <input type="text" class="inputform w80" id="pos1"></input>
+            </div>
+            <div class="colscad-4">
+            <input type="text" class="inputform w80" id="velo1"></input>
+            </div>
+            <div class="colscad-4">
+            <div class="btn btn-teal wfull" onClick="cncMachineController.homeAxis(1)">Zero</div>
+            </div>
+            <div class="clear"></div>
+            <div class="colscad-4 center">
+            <h2><label id="name2">Z</label></h2>
+            </div>
+            <div class="colscad-4">
+            <input type="text" class="inputform w80" id="pos2"></input>
+            </div>
+            <div class="colscad-4">
+            <input type="text" class="inputform w80" id="velo2"></input>
+            </div>
+            <div class="colscad-4">
+            <div class="btn btn-teal wfull" onClick="cncMachineController.homeAxis(2)">Zero</div>
+            </div>
+            <div class="clear"></div> -->
+
+        </div>
+        <hr>
+    </div>
+
+    <div  id="joy speed" class="colscad-1" hidden>
+        <h3 class="center">Joy Speed</h3>
+        <div class="colscad-3 right">
+            <div class="btn btn-teal w80"><h4>&laquo;</h4></div>
+        </div>
+        <div class="colscad-3 center">
+            <input type="text" class="inputform w120" id="joySpeed"></input>
+        </div>
+        <div class="colscad-3 left">
+            <div class="btn btn-teal w80"><h4>&raquo;</h4></div>
+        </div>
+        <div class="clear"></div>
+        <hr>
+    </div>
+
+    <div id="botones1" hidden>
+        <div class="colscad-3 center">
+              <div class="btn btn-blue wfull">Start</div>
+        </div>
+        <div class="colscad-3 center">
+              <div class="btn btn-blue wfull">Stop</div>
+        </div>
+        <div class="colscad-3 center">
+            <div class="btn btn-blue wfull">Pause</div>
+        </div>
+        <div class="clear"></div>
+        <hr>
+    </div>
+
+    <div id="manualAutomatico">
+
+        <div class="colscad-2 center">
+            <input type="radio" class="toggle" id="cncAutomatic" name="cncMode" value="cncAutomatic" onclick="cncMachineController.changeCncMode(this.value);">
+            <label for="cncAutomatic" class="btn btn-orange wfull">Automatic</label>
+        </div>
+        <div class="colscad-2 center">
+            <input type="radio" class="toggle" id="cncManual" name="cncMode" value="cncManual" onclick="cncMachineController.changeCncMode(this.value);">
+            <label for="cncManual" class="btn btn-orange wfull">Manual</label>
+        </div>
+        <div class="center">
+            <input type="text" class="inputform wfull error" readonly id="cncStatus"></input>
+        </div>
+
+        <div class="clear"></div>
+        <hr>
+    </div>
+
+    <div id="cncFlags">
+        <div class="colscad-3">
+            <h3 class="center">EMERGENCY</h3>
+        </div>
+        <div class="colscad-3">
+            <h3 class="center">In ERROR</h3>
+        </div>
+        <div class="colscad-3">
+            <h3 class="center">RUNNING</h3>
+        </div>
+        <div class="clear"></div>
+
+        <div class="colscad-3 center">
+            <img class="center" src="images/gray.png" id="cncEmergency" width="32" height="32" alt="cncEmergency">
+        </div>
+        <div class="colscad-3 center">
+            <img class="center" src="images/gray.png" id="cncInError" width="32" height="32" alt="cncInError">
+        </div>
+        <div class="colscad-3 center">
+            <img class="center" src="images/gray.png" id="cncRunning" width="32" height="32" alt="cncRunning">
+        </div>
+        <div class="clear"></div>
+        <hr>
+    </div>
+
+    <div id="feed Override" class="colscad-1 center">
+    <h3>Feed Override</h3>
+          <div class="rangeh">
+          <input type="range" max="100" min="0" step="1" value="25" id="overFeed" name="#heightMapLoader.transparency" onClick="cncMachineController.setOverFeed()"/>
+          <div class="numberleft">0</div>
+          <div class="numbercenter">50</div>
+          <div class="numberight">100</div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="colscad-1 left">
+        <h3>Input Status</h3>
+        <div id="cncInputs"></div>
+    </div>
+    <p></p>
+    <div class="colscad-1 left">
+        <h3>Output Status</h3>
+        <div id="cncOutputs"></div>
+    </div>
+
+    <div class="colscad-1 center" hidden>
+    <h3>Spindle Override</h3>
+          <div class="rangeh">
+          <input type="range" max="100" min="0" step="1" value="0" name="#heightMapLoader.transparency"/>
+          <div class="numberleft">0</div>
+          <div class="numbercenter">50</div>
+          <div class="numberight">100</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="colscad-1" hidden>
+        <h3>MDI command</h3>
+        <input type="text" class="inputform w300 left"></input>
+        <div class="btn btn-teal w100">ENTER</div>
+    </div>
+
+</div>
+
+	<div class="colscad-2 center">
+
+        <div class="colscad-2">
+                <h3 class="center">Tex Conexion Status</h3>
+        </div>
+        <div class="colscad-2">
+                <h3 class="center">Server Status</h3>
+        </div>
+
+        <div class="colscad-2">
+            <input type="text" class="inputform wfull center info" readonly id="texStatus"></input>
+        </div>
+        <div class="colscad-2">
+            <input type="text" class="inputform wfull center info" readonly id="serverInternalStatus"></input>
+        </div>
+        <div class="clear"></div>
+        <hr>
+
+        <!-- area del ftp -->
+        <div id="ftp area" class="colscad-1 relleno">
+            <!-- connect y mensaje -->
+            <div class="colscad-2">
+                <h3 class="center">Ftp Connect Status</h3>
+            </div>
+            <div class="colscad-2">
+                <h3 class="center">Tex Job Status</h3>
+            </div>
+
+            <div class="colscad-2 center">
+                <img class="center" src="images/gray.png" id="ftpConnectStatus" width="32" height="32" alt="ftpConnectStatus">
+            </div>
+            <div class="colscad-2 center">
+                <input type="text" class="inputform wfull center" style="font-weight:bold;color: #32fff9;" id="jobStatus"></input>
+            </div>
+
+            <div class="clear"></div>
+            <p></p>
+            <h3 class="center">Ftp Transmission File</h3>
+            <p></p>
+            <meter min="0" max="100" style="height: 20px;" class="bar blue wfull"  id="ftpCurProgress"></meter>
+            <input type="text" class="inputform wfull center" id="ftpResultMsg"></input>
+
+        </div>
+        <div class="clear"></div>
+        <hr>
+        <!-- el curJob -->
+        <div id="cur job" class="colscad-1 relleno">
+            <div class="colscad-1">
+                <h3 class="left">Current Job</h3>
+                <br>
+                <div id="curJob" style="height: 100px; overflow-y: scroll;"></div>
+
+            </div>
+        </div>
+
+        <div id="job queue" class="colscad-1 relleno">
+            <div class="colscad-1">
+                <h3 class="left">Job Queue</h3>
+                <br>
+                <div id="jobQueue" style="height: 100px; overflow-y: scroll;">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="colscad-1 center">
+            <div class="btn btn-blue wfull" onClick="cncMachineController.clearJobs()">Clear JOBS QUEUE</div>
+        </div>
+
+        <div id="display" class="displayTrayectoria" hidden>
+            <canvas id="sgCanvasLProfile" height="100" width="300"></canvas>
+
+            <script>
+                var c=document.getElementById("sgCanvasLProfile");
+                var ctx=c.getContext("2d");
+
+                ctx.moveTo(0,0);
+                ctx.lineTo(200,100);
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.arc(95,50,40,0,2*Math.PI);
+                ctx.stroke();
+
+                ctx.font="30px Arial";
+                ctx.fillText("Hello World",10,50);
+            </script>
+        </div>
+
+        <div id="play bar" hidden>
+            <ul class="btnbar center">
+            <li>Auto</li><li>Play</li><li>Pause</li><li>Stop</li><li>Edit</li>
+            </ul>
+        </div>
+
+
+        <!--
+        <div class="textarea" cols="200" rows="20">
+        TEXT AREA
+        </div> -->
+
+
+    </div>
+
+
+</div>
+
+<div class="clear"></div>
+</div>
+</div>
+</body>
+</html>
