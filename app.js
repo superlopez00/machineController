@@ -1,59 +1,82 @@
 "use strict";
 
-////////////////////////////////////////////
-// Codigo para obtener las opciones
+//////////////////////////////////////////////////////////
+// Leo las opciones y genero la instancia del interfaz
+var config=require("./config.json");
+function checkConfig(config, machineConfig){
+    {
+        // comprobamos cosas
+        if(config.initialOptions==undefined)
+        {
+            console.log("Not initial Options defined...");
+            return false;
+        }
+        if(config.initialOptions.interfaceType==undefined ||
+           config.initialOptions.interfaceName==undefined ||
+           config.initialOptions.webPort==undefined)
+        {
+            console.log("Needed initialOptions: { interfaceType:'',interfaceName:'',webPort:'' } please check config.json");
+            return false;
+        }
+        // buscamos la configuracion de la maquina que nos han dicho.
+        var maqConfig=config[config.initialOptions.interfaceName];
+        if(maqConfig==undefined)
+        {
+            console.log("Not found config for " + config.initialOptions.interfaceName);
+            return false;
+        }
+        if(maqConfig.interfaceType==config.initialOptions.interfaceType)
+        {
+            console.log("Machine " + config.initialOptions.interfaceName + " config is not configured like " + config.initialOptions.interfaceType);
+            return false;
+        }
+        if(maqConfig.interfaceFile==undefined)
+        {
+            console.log("Needed interfaceFile at " + config.initialOptions.interfaceName + " config");
+            return false;
+        }
+        if(maqConfig.machineHost==undefined)
+        {
+            console.log("Needed machineHost at " + config.initialOptions.interfaceName + " config");
+            return false;
+        }
 
-var cmdOpt = require('optimist')
-    .options('s',{
-        alias: 'split',
-        demand: false,
-        describe: "split files"
-    })
-    .options('f',{
-        alias : 'ftp',
-        demand: false,
-        describe: "connect ftp when requiered"
-    })
-    .options('t',{
-        alias: 'tex',
-        demand: false,
-        describe: "connect tex when required"
-    })
-	.options('texHost',{
-		demand: true,
-		describe: "tex IP address to connect"
-	})
-	.options('webPort',{
-		demand: true,
-		describe: "web port for the controller"
-	})
-	.options('name',{
-		demand:true,
-		describe: "machineName"
-	})
-    .usage('Release sites.\nUsage: $0 options');
+        machineConfig=maqConfig;
+        return true;
+    }
+}
+
+var machineConfig={};
+if(checkConfig(config,machineConfig)==false)
+    return;
+
+// intentamos cargar el interface
+var interfaceGen=require(machineConfig.interfaceFile);
+if(interfaceGen==undefined || interfaceGen.generatorFunc==undefined){
+    console.log("please check " + machineConfig.interfaceFile + "file if exists and have generatorFunc inside");
+    return false;
+}
+// instanciamos el interfaz (nos devolvera un objeto interfaz con punteros a las funciones internas)
+var interfaceInstance=interfaceGen.generatorFunc(machineConfig);
+if(interfaceInstance==undefined) {
+    console.log("Generator Instance of " + machineConfig.interfaceFile + "failed");
+    return false;
+}
+
+// toodo esta ok, con lo que intentamos abrir el interfaz
+if(interfaceInstance.open)
+    interfaceInstance.open();
+interfaceInstance.interval=setInterval(function() { interfaceInstance.iteraAutomata(); },1000);
+
 
 /////////////////////////////////////////////
-
-
+// Me creo el resto de cosas
 var http = require('http');
 var nodestatic = require('node-static');
 var when = require("when");
-
 var staticServer = new nodestatic.Server("./");
-
-var texClass=require('./texInterface.js');
 var querystring=require('querystring');
-
-var argv=cmdOpt.argv;
-var texOpts={host:argv.texHost, initOptions:cmdOpt.argv};
-var texInterface=texClass.create(texOpts);
 var requestCounter=0;
-
-
-
-//console.log("Hello world");
-
 
 function sendJSONResponse(res,result){
 	var headers={};
@@ -139,19 +162,6 @@ function getGlobals(callback)
     callback(result);
 }
 
-/*SSfunction getGlobals(callback)
-{
-    var result = { axisNames: texInterface.axisNames, axisStatus: texInterface.axisStatus, axisPos: texInterface.axisPos,
-        axisVelo: texInterface.axisVelo, inputs: texInterface.inputs, outputs: texInterface.outputs,
-        v980: texInterface.v980, v981: texInterface.v981, curIsoLine: texInterface.curIsoLine,
-        cncEmergency: texInterface.cncEmergency, cncErrorMsg: texInterface.cncErrorMsg, cncRunning: texInterface.cncRunning,
-        cncInError: texInterface.cncInError, cncStatus: texInterface.cncStatus, cncOverFeed: texInterface.cncOverFeed,
-        texMsgQueue: texInterface.transQueue.length, texStatus: texInterface.status, texConnStatus: texInterface.connStatus };
-
-    callback(result);
-}*/
-
-
 function processRequest(res, query)
 {
     if(!query.cmd)
@@ -159,7 +169,7 @@ function processRequest(res, query)
     else
     {
         switch(query.cmd){
-            case 'NAME': sendJSONResponse(res,{name:options.machineName});
+            case 'NAME': sendJSONResponse(res,{name:config.machineName});
                 break;
             case 'GETSETTINGS': sendJSONResponse(res,{settings:settings});
                 break;
@@ -440,54 +450,37 @@ function processRequest(res, query)
 }
 
 
+
+
 var server = http.createServer(
-  function (req, res)
-  {
-      var url = require('url').parse(req.url);
+    function (req, res)
+    {
+        var url = require('url').parse(req.url);
 
-      var pathfile = url.pathname;
-      var queryData="";
+        var pathfile = url.pathname;
+        var queryData="";
 
-      //console.log('request: '+pathfile);
-
-      // tengo un post.
-      if(req.method == 'POST') {
-          req.on('data', function(data) { queryData += data; });
-          req.on('end', function() {
-              var query = JSON.parse(queryData);
-              processRequest(res, query);
-          });
-      }
-      else if(req.method == 'GET') {
-          if (pathfile!='/request') {
-              staticServer.serve(req, res);
-          }
-          else {
-              requestCounter++;
-              var query=querystring.parse(url.query);
-              processRequest(res, query);
-          }
-      }
-  }
+        // tengo un post.
+        if(req.method == 'POST') {
+            req.on('data', function(data) { queryData += data; });
+            req.on('end', function() {
+                var query = JSON.parse(queryData);
+                processRequest(res, query);
+            });
+        }
+        else if(req.method == 'GET') {
+            if (pathfile!='/request') {
+                staticServer.serve(req, res);
+            }
+            else {
+                requestCounter++;
+                var query=querystring.parse(url.query);
+                processRequest(res, query);
+            }
+        }
+    }
 );
 
+server.listen(config.initialOptions.webPort);
 
-var settingsFile="./settings.json";
-var settings=undefined;
-if(texOpts.initOptions && texOpts.initOptions.name)
-	settingsFile="./"+texOpts.initOptions.name+".json";
-settings=require(settingsFile);
-	
-	
-
-
-// 20131009: al inicio no abrimos la comunicacion con el TEX, ahora solo conectamos y abrimos cuando nos manden un archivo
-if(texInterface.initOptions.texOptimize==false)
-    texInterface.open(texOpts);
-
-server.listen(argv.webPort);
-
-if(texInterface.initOptions.texOptimize==false)
-// 20131009: al inicio no pedimos las globals a saco, ahora solo conectamos y abrimos cuando nos manden un archivo
-    texInterface.interval=setInterval(function() {texInterface.iteraAutomata();},1000);
 

@@ -4,7 +4,7 @@
     <list default="true" id="137b2f46-f1c9-4d43-97a1-ac43393e61f7" name="Default" comment="" />
     <ignored path="TexController_prj.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/app.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1398255327656" ignored="false" />
+    <file path="/app.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1401285779765" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/node-static/node_modules/optimist/node_modules/minimist/test/parse.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1372843114015" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/node-static/node_modules/optimist/node_modules/minimist/example/parse.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1372843114015" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/node-static/node_modules/optimist/test/whitespace.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1372843114015" ignored="false" />
@@ -16,7 +16,7 @@
     <file path="$PROJECT_DIR$/node_modules/node-static/node_modules/optimist/node_modules/minimist/test/whitespace.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1372843114015" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/node-static/node_modules/optimist/node_modules/minimist/test/parse_modified.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1372843114015" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/node-static/node_modules/optimist/node_modules/minimist/test/long.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1372843114015" ignored="false" />
-    <file path="/texInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1398259480140" ignored="false" />
+    <file path="/texInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1401294745390" ignored="false" />
     <file path="/fragment.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1398256886171" ignored="false" />
     <file path="/RegExp Fragment (texInterface.js:5231).regexp" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1372844597234" ignored="false" />
     <file path="/dummy.txt" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1373366011281" ignored="false" />
@@ -29,37 +29,41 @@
     <file path="/mach.css" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1374842040046" ignored="false" />
     <file path="/index.html" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395910685046" ignored="false" />
     <file path="/control.html" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395762389062" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GTransCoder/GTransCoder_prj/index.html" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/GTranscoder/www/index.html" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386071340375" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/GTranscoder/www/js/transgcoderDirector.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386066291390" ignored="false" />
+    <file path="C:/../GTransCoder/GTransCoder_prj/index.html" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
+    <file path="C:/../../web/webBase1/GTranscoder/www/index.html" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386071340375" ignored="false" />
+    <file path="C:/../../web/webBase1/GTranscoder/www/js/transgcoderDirector.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386066291390" ignored="false" />
     <file path="/transgcoderDirector.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386066288125" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/GTranscoder/www/js/gTranscoderSchema.json" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386063685515" ignored="false" />
+    <file path="C:/../../web/webBase1/GTranscoder/www/js/gTranscoderSchema.json" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386063685515" ignored="false" />
     <file path="/gTranscoderSchema.json" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386063655171" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/GTranscoder/www/css/gtranscoder.css" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386070971125" ignored="false" />
+    <file path="C:/../../web/webBase1/GTranscoder/www/css/gtranscoder.css" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386070971125" ignored="false" />
     <file path="/gtranscoder.css" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386065042312" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/vxcommon/jsframework/SGLib.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
+    <file path="C:/../../web/vxcommon/jsframework/SGLib.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
     <file path="/SGLib.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1386067565015" ignored="false" />
     <file path="/enky.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1391511755750" ignored="false" />
     <file path="/rtxInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1387465536859" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/GTranscoder/config.json" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1391512394250" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/middleware/Interfaces/MailInterface/mailInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1391530121453" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/GTranscoder/testMark/quickCluster.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1391940430046" ignored="false" />
+    <file path="C:/../../web/webBase1/GTranscoder/config.json" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1391512394250" ignored="false" />
+    <file path="C:/../../web/webBase1/middleware/Interfaces/MailInterface/mailInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1391530121453" ignored="false" />
+    <file path="C:/../../web/webBase1/GTranscoder/testMark/quickCluster.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1391940430046" ignored="false" />
     <file path="/quickCluster.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1391940394328" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GTransCoder/GTransCoder_prj/js/SMapaAxis.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/vxcommon/jsframework/utils.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GTransCoder/GTransCoder_prj/js/STransGCoder.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GTransCoder/GTransCoder_prj/js/SGCodeParser.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GTransCoder/GTransCoder_prj/js/SGCodeWriter.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GTransCoder/GTransCoder_prj/js/SAlarsisKinematics.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
-    <file path="$PROJECT_DIR$/../../GTransCoder/GTransCoder_prj/js/gtranscoder.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/GTranscoder/www/js/controlador_angular.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395762466953" ignored="false" />
+    <file path="C:/../GTransCoder/GTransCoder_prj/js/SMapaAxis.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
+    <file path="C:/../../web/vxcommon/jsframework/utils.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
+    <file path="C:/../GTransCoder/GTransCoder_prj/js/STransGCoder.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
+    <file path="C:/../GTransCoder/GTransCoder_prj/js/SGCodeParser.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
+    <file path="C:/../GTransCoder/GTransCoder_prj/js/SGCodeWriter.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
+    <file path="C:/../GTransCoder/GTransCoder_prj/js/SAlarsisKinematics.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
+    <file path="C:/../GTransCoder/GTransCoder_prj/js/gtranscoder.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1392370715062" ignored="false" />
+    <file path="C:/../../web/webBase1/GTranscoder/www/js/controlador_angular.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395762466953" ignored="false" />
     <file path="/controlador_angular.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395762454656" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/GTranscoder/www/views/control.html" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395762484703" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/middleware/Interfaces/TexInterface/texInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395834576890" ignored="false" />
-    <file path="$PROJECT_DIR$/../../../web/webBase1/middleware/Interfaces/TexInterface/texServiceInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395834933062" ignored="false" />
+    <file path="C:/../../web/webBase1/GTranscoder/www/views/control.html" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395762484703" ignored="false" />
+    <file path="C:/../../web/webBase1/middleware/Interfaces/TexInterface/texInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395834576890" ignored="false" />
+    <file path="C:/../../web/webBase1/middleware/Interfaces/TexInterface/texServiceInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395834933062" ignored="false" />
     <file path="/texServiceInterface.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1395834928593" ignored="false" />
     <file path="/varControl.html" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1398256462625" ignored="false" />
     <file path="/varController.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1398259190828" ignored="false" />
+    <file path="/config.json" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1401276179000" ignored="false" />
+    <file path="/Dummy.txt" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1401297111953" ignored="false" />
+    <file path="C:/carton/AlarsisCarton/www/modules/clCadCarton.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1401297852890" ignored="false" />
+    <file path="C:/carton/AlarsisCarton/itemLibrary/generators/santiSegmentedBend.js" changelist="137b2f46-f1c9-4d43-97a1-ac43393e61f7" time="1401297895265" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,56 +83,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="19" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.13095239">
+            <state line="331" column="23" selection-start="13473" selection-end="13478" vertical-scroll-proportion="-15.68">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="texInterface.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="config.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="16" selection-start="954" selection-end="961" vertical-scroll-proportion="-14.384615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="texInterface.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/texInterface.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1182" column="34" selection-start="36351" selection-end="36351" vertical-scroll-proportion="-8.92">
+            <state line="2298" column="21" selection-start="86488" selection-end="86488" vertical-scroll-proportion="0.81369865">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="when.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/when/when.js">
+      <file leaf-file-name="utils.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="792" column="31" selection-start="23364" selection-end="23364" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="control.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/control.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="48" selection-start="1690" selection-end="1726" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="varControl.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/varControl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="33" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-0.65384614">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="varController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/varController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="22" selection-start="876" selection-end="881" vertical-scroll-proportion="3.48">
-              <folding />
+            <state line="741" column="33" selection-start="21105" selection-end="21105" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,34 +124,7 @@
       <file leaf-file-name="texControllerPodo.bat" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texControllerPodo.bat">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="35" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ftp.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/ftp/lib/ftp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1124" column="0" selection-start="32082" selection-end="32082" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="machine.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/machine.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="6" selection-start="4610" selection-end="4610" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="10" selection-start="3518" selection-end="3518" vertical-scroll-proportion="0.0">
+            <state line="2" column="45" selection-start="165" selection-end="172" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$USER_HOME$/.WebIde60/system/extLibs/nodejs-v0.10.12-src/core-modules-sources/lib/_stream_writable.js" />
         <option value="$PROJECT_DIR$/node_modules/ftp/lib/ftp.js" />
         <option value="$PROJECT_DIR$/mach3/mach3.html" />
         <option value="$PROJECT_DIR$/mach3/css/mach.css" />
@@ -192,9 +152,10 @@
         <option value="$PROJECT_DIR$/texControllerPodo.bat" />
         <option value="$PROJECT_DIR$/js/machine.js" />
         <option value="$PROJECT_DIR$/varControl.html" />
-        <option value="$PROJECT_DIR$/texInterface.js" />
         <option value="$PROJECT_DIR$/js/varController.js" />
+        <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/texInterface.js" />
       </list>
     </option>
   </component>
@@ -202,8 +163,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
     <option name="y" value="-4" />
-    <option name="width" value="1368" />
-    <option name="height" value="742" />
+    <option name="width" value="1288" />
+    <option name="height" value="934" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -253,34 +214,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="TexController_prj">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="TexController_prj">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="js">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,22 +224,37 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="machineController">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.22916667" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="JavaScript.Libraries" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../web/webBase1/GTranscoder/testMark" />
+    <property name="options.lastSelected" value="JavaScript.Libraries" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="C:/../../web/webBase1/GTranscoder/testMark" />
     <property name="FullScreen" value="false" />
     <property name="last.edited.regexp" value="?" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\machineController" />
       <recent name="C:\fuentes\NodeServers\TexController\TexController_prj" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -397,16 +345,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1368" height="742" extended-state="6" />
+    <frame x="-4" y="-4" width="1288" height="934" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26254" sideWeight="0.71823204" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20091324" sideWeight="0.75027746" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2617504" sideWeight="0.71823204" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12884927" sideWeight="0.7490397" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24972253" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10992529" sideWeight="0.2950276" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12884927" sideWeight="0.2496799" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38232043" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3118757" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -513,20 +461,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="10" selection-start="3815" selection-end="3815" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ftp/lib/ftp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1124" column="0" selection-start="32082" selection-end="32082" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/ffi/node_modules/ref/lib/ref.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="478" column="0" selection-start="13886" selection-end="13886" vertical-scroll-proportion="0.0" />
@@ -573,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/texControllerPodo.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="35" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/machine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="158" column="6" selection-start="4610" selection-end="4610" vertical-scroll-proportion="0.0">
@@ -589,28 +516,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/varControl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="33" selection-start="1346" selection-end="1346" vertical-scroll-proportion="-0.65384614">
+        <state line="55" column="33" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/varController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="22" selection-start="876" selection-end="881" vertical-scroll-proportion="3.48">
+        <state line="31" column="22" selection-start="876" selection-end="881" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/texInterface.js">
+    <entry file="file://$PROJECT_DIR$/texControllerPodo.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1182" column="34" selection-start="36351" selection-end="36351" vertical-scroll-proportion="-8.92">
+        <state line="2" column="45" selection-start="165" selection-end="172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="741" column="33" selection-start="21105" selection-end="21105" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="16" selection-start="954" selection-end="961" vertical-scroll-proportion="-14.384615">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="19" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.13095239">
+        <state line="331" column="23" selection-start="13473" selection-end="13478" vertical-scroll-proportion="-15.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texInterface.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2298" column="21" selection-start="86488" selection-end="86488" vertical-scroll-proportion="0.81369865">
           <folding />
         </state>
       </provider>

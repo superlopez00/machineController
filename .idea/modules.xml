@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TexController_prj.iml" filepath="$PROJECT_DIR$/.idea/TexController_prj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/machineController.iml" filepath="$PROJECT_DIR$/.idea/machineController.iml" />
     </modules>
   </component>
 </project>
